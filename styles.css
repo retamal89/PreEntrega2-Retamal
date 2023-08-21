@@ -1,0 +1,195 @@
+/* Inicio Selector Universal */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fin Selector Universal */
+
+header{
+    background-color: #7b7263;
+    height: 80px;
+    font-size: 22px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.isologo{
+
+}
+
+.logo{
+    float: left;
+    color: #0e34a0;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #affc41;
+}
+
+.navbar{
+    float:right;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #040404;
+}
+
+.navbar a:hover{
+    color: #0e34a0;
+}
+
+main{
+    height: calc(100% - 80px);
+}
+
+.contenedor-galeria img{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: grayscale(100%)
+}
+
+.contenedor-galeria{
+    display: grid;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
+    padding: 20px;
+}
+
+.grid-item:nth-child(1){
+    grid-row-start: span 3;
+}
+
+.grid-item:nth-child(3){
+    grid-row-start: span 2;
+}
+
+.trabajosrealizado{
+    display:grid;
+}
+
+.trabajosrealizado img{
+    height: 150px;
+    width:auto;
+}
+/* inicio pagina contacto */
+/* inicio estilos formulario */
+
+form{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: url(./Images/Contacto/soldador.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+form h2{
+    text-align:center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #affc41;
+}
+
+form li{
+    list-style: none;
+}
+
+form input{
+    width:100%;
+    font-size: 25px;
+    background-color: #aefc41b0;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #0e34a0;
+}
+
+form input::placeholder{
+    color:#0e34a0
+}
+
+form textarea{
+    width: 100%;
+    font-size: 25px;
+    background-color: #aefc41b0;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #0e34a0;
+}
+
+form textarea::placeholder{
+    color:#0e34a0
+}
+
+#boton_form{
+    background-color: #0e34a0;
+    font-size: 25px;
+    color: #affc41;
+    margin: 5px;
+}
+
+/* fin estilos formulario */
+/* inicio estilos ubicacion */
+
+#ubicacion{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+#ubicacion h2{
+    text-align:center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.ubicacion{
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+.mapa{
+    width: 70%;
+    height: 500px;
+    padding: 5px;
+    margin: 5px;
+    background: #aefc41b0;
+}
+
+.direccion{
+    width: 30%;
+    height: 500px;
+    padding: 5px;
+    margin: 5px;
+    background: #aefc41b0;
+}
+
+/* fin estilos ubicacion */
+/* fin pagina contacto */
+
+footer{
+    background-color: #7b7263;
+    height: 80px;
+    font-size: 12px;
+    padding: 20px; 
+}
