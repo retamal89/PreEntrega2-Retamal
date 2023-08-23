@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Images/Favicon_Metalúrgica_Retamal-transparent.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles.css">
+    <!-- BS inicia -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- BS fin -->
     <!-- fontawesome inicia -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fontawesome fin -->
@@ -13,21 +15,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
     <!-- google fonts fin -->
+    <link rel="stylesheet" href="../styles.css">
     <title>Metalurgica Retamal - Contacto</title>
 </head>
 <body>
     <header>
-        <div class="isologo"><img src="../Images/Isologo_Metalúrgica_Retamal-transparent.png" alt="Logo de Metalúrgica Retamal" width="60" height="60" align="left"></div>
-        <div class="logo">Metalúrgica <span>Retamal</span></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./quehacemos.html">¿Que Hacemos?</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./trabajosrealizados.html">Trabajos Realizados</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Images/Isologo_Metalúrgica_Retamal-transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Metalúrgica <span>Retamal</span>
+            </a>
+            </div>
         </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./quehacemos.html">¿Que Hacemos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./trabajosrealizados.html">Trabajos Realizados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <h1>Contacto</h1>
@@ -70,14 +95,22 @@
             </div>
         </section>
     </main>
-    <footer>
-        <nav>
-        <ul>
-            <li><a href="https://facebook.com/metalurgicaretamal"><i class="">Facebook</i></a></li>
-            <li><a href="https://instagram.com/metalurgicaretamal"><i class="">Instagram</i></a></li>
-        </ul>
-        <p>Todos los derechos reservados - Metalúrgica Retamal ©</p>
-        </nav>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer">
+                    <div class="footer-iconos">
+                        <a href="https://www.facebook.com/trabajoenaceroinox/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jose-retamal-b11b2a32/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p>Todos los derechos reservados - Metalurgica Retamal ® 2023</p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- Inicio BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Fin BS JS -->
 </body>
 </html>
